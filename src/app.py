@@ -127,6 +127,8 @@ def unregister_from_activity(activity_name: str, email: str):
             detail="Student is not signed up for this activity"
         )
 
+    print('somechange')
+
     # Remove student
     activity["participants"].remove(email)
     return {"message": f"Unregistered {email} from {activity_name}"}
